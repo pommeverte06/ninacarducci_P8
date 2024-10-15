@@ -3,10 +3,12 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
+    <!-- meta description optimisée pour le SEO -->
     <meta
       name="description"
-      content="Nina Carducci, photographe professionnelle à Bordeaux, spécialisée en portrait, concerts, mariages et entreprise. Découvrez son portfolio et ses services."
+      content="Nina Carducci, photographe professionnelle à Bordeaux, spécialisée en portraits, mariages, concerts et photographie d'entreprise. Elle offre une approche artistique et personnalisée pour capturer des moments authentiques et inoubliables. Découvrez son portfolio et ses services sur mesure."
     />
+    <!-- meta pour Open Graph (SEO pour les réseaux sociaux) -->
     <meta property="og:title" content="Nina Carducci Photographe" />
     <meta
       property="og:description"
@@ -18,24 +20,64 @@
     />
     <meta property="og:url" content="https://www.ninacarducci.photo" />
     <meta name="twitter:card" content="summary_large_image" />
-    <title>Nina Carducci Photographe</title>
+    <meta property="og:type" content="website" />
 
+    <title>Nina Carducci Photographe</title>
+    <!-- lien canonical pour éviter les doublons d'URL (SEO) -->
+    <link
+      rel="canonical"
+      href="https://pommeverte06.github.io/ninacarducci_P8/"
+    />
+    <!-- importation des styles CSS minifiés-->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- preconnect pour établir la connexion tôt -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- preload des polices pour les charger plus rapidement -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      as="style"
+    />
+    <!-- préchargement des images importantes pour améliorer la performance -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
       rel="stylesheet"
     />
 
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/slider/ryoji-iwata.avif"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/slider/nicholas-green.webp"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/slider/edward-cisneros.avif"
+    />
 
-    <link rel="preload" as="image" href="./assets/images/slider/ryoji-iwata.avif">
-    <link rel="preload" as="image" href="./assets/images/slider/nicholas-green.webp">
-    <link rel="preload" as="image" href="./assets/images/slider/edward-cisneros.avif">
-
-    <link rel="preload" as="image" href="./assets/images/gallery/mariage/jakob-owens.webp">
-
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/gallery/mariage/jakob-owens.webp"
+    />
 
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script
@@ -46,6 +88,8 @@
     ></script>
     <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
+
+    <!-- référencement local avec schema.org pour indiquer la localisation et les heures d'ouverture -->
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -67,31 +111,32 @@
   </head>
   <body>
     <header class="top-header">
-      <h1 class="name">Nina Carducci</h1>
-      <div class="nav">
-        <nav aria-label="Main navigation">
-          <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#gallery">Galerie</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a
-                class="social-link"
-                href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-                target="_blank"
-                aria-label="Lien vers Instagram"
-                ><img
-                  src="assets/images/instagram.webp"
-                  alt="lien vers instagram"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <h1 class="name">Nina Carducci Photographe</h1>
+
+      <!-- navigation principale avec aria-label pour l'accessibilité -->
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <!-- lien vers Instagram avec un aria-label pour décrire le lien pour les lecteurs d'écran -->
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+              aria-label="Lien vers Instagram"
+              ><img
+                src="assets/images/instagram.webp"
+                alt="Icône d'Instagram - Lien vers le profil Instagram de Nina Carducci"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <div id="header">
+      <div class="carousel">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -165,14 +210,14 @@
       <div id="about">
         <div class="picture left">
           <img
-          loading="lazy"
+            loading="lazy"
             src="./assets/images/nina.avif"
             alt="portrait de nina carducci"
           />
         </div>
-        <div id="about-me">
-          <h2 class="about-me__title">A propos de moi</h2>
-          <h3 class="about-me__introduction">
+        <article id="about-me">
+          <h2 class="about-me-title">A propos de moi</h2>
+          <h3 class="about-me-introduction">
             Devenir photographe était pour moi une évidence. Comme si j’y étais
             prédestinée. Saisir un moment, une émotion, une situation, un
             endroit, une lumière et les rendre immortels, voilà ce qui me fait
@@ -189,10 +234,10 @@
             de la tendresse et de la lumière à chaque fois que vous poserez les
             yeux sur vos photos.
           </p>
-        </div>
+        </article>
       </div>
-      <div id="gallery">
-        <h3 class="title">Portfolio</h3>
+      <section id="gallery">
+        <h2 class="title">Portfolio</h2>
         <div class="container py-3">
           <div class="gallery" style="display: none">
             <img
@@ -263,20 +308,20 @@
         <div class="quote">
           <figure>
             <blockquote>
-              <h1 class="quote__text">
+              <h2 class="quote__text">
                 Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
                 ou qu’un fait est traduit en photo, il cesse d’être un fait pour
                 devenir une opinion. L’inexactitude n’existe pas en
                 photographie. Toutes les photos sont exactes. Aucune d’elles
                 n’est la vérité.
-              </h1>
+              </h2>
             </blockquote>
             <figcaption class="quote__author">- Richard Avedon</figcaption>
           </figure>
         </div>
-      </div>
-      <div id="services">
-        <h1 class="title">Mes services</h1>
+      </section>
+      <section id="services">
+        <h2 class="title">Mes services</h2>
         <div class="container">
           <div class="service">
             <div class="service__description">
@@ -320,20 +365,21 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="quote">
         <figure>
           <blockquote>
-            <h1 class="quote__text">
+            <h2 class="quote__text">
               De manière inconsciente, je crois, je guette un regard, une
               expression, des traits ou une nostalgie capable de résumer ou plus
               exactement de révéler une vie
-            </h1>
+            </h2>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </div>
-      <div id="contact">
+      <!-- section contact avec formulaire et améliorations pour l'accessibilité -->
+      <section id="contact">
         <div class="container">
           <div class="form-container">
             <h3>Une question ? Une demande de devis ?</h3>
@@ -341,30 +387,44 @@
               N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
               heures
             </p>
-            <form action="" method="post">
+            <form action="." method="post">
               <label for="nom">Nom</label>
-              <input type="text" name="nom" id="nom" />
+              <input
+                type="text"
+                name="nom"
+                id="nom"
+                aria-required="true"
+                autocomplete="nom"
+              />
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                aria-required="true"
+                autocomplete="email"
+              />
               <label for="message">Message</label>
               <textarea
                 name="message"
                 id="message"
                 cols="30"
                 rows="10"
+                autocomplete="off"
+                aria-required="true"
               ></textarea>
               <input type="submit" value="Envoyer" />
             </form>
           </div>
           <div class="picture right">
             <img
-            loading="lazy"
+              loading="lazy"
               src="./assets/images/camera.avif"
               alt="photo d'une camera d'appareil photo"
             />
           </div>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>
