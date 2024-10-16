@@ -74,6 +74,7 @@ body {
 
 .picture img {
   width: 100%;
+  height: auto;
 }
 #about-me {
   flex: 2;
@@ -107,6 +108,7 @@ body {
 .nav-pills .show > .nav-link {
   color: white;
   background-color: #c9442d;
+  /* background-color: rgb(124, 111, 9); */
 }
 .nav-pills .nav-link {
   color: #000;
