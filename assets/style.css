@@ -6,6 +6,12 @@ body {
   font-family: "Inter";
   font-style: normal;
 }
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter.woff2") format("woff2");
+  font-display: swap;
+}
+
 .top-header {
   background-color: white;
   position: sticky;
@@ -42,10 +48,6 @@ body {
   width: 20px;
 }
 
-
-
-
-
 #about {
   display: flex;
   background-color: #f6d2b8;
@@ -64,7 +66,6 @@ body {
   left: 0;
   z-index: -1;
 }
-
 
 .picture {
   flex: 1;
