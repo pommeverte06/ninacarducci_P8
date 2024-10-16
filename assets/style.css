@@ -48,16 +48,39 @@ body {
   width: 20px;
 }
 
-.carousel-item img{
-
-  aspect-ratio: 3 / 1.5; 
+.carousel-item img {
+  /* aspect-ratio: 3 / 1.3;  */
   width: 100%;
   height: auto;
-
-
+  object-fit: cover;
+  max-width: 100%;
+}
+/* amélioration des boutons du carousel meilleure accesibilité */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+  padding: 15px;
 }
 
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  color: white;
+}
 
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 #about {
   display: flex;
@@ -141,8 +164,6 @@ body {
   display: block;
   padding-bottom: 100%;
 }
-
-
 
 .gallery-item {
   position: absolute;
