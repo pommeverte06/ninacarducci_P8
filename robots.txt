@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/
+Allow: /
+
+Sitemap: https://pommeverte06.github.io/ninacarducci_P8//sitemap.xml
