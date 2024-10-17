@@ -88,6 +88,8 @@ body {
   padding-inline: 100px;
   padding-block: 100px;
   position: relative;
+  min-height: 100px;
+  min-width: 100px;
 }
 
 .picture.left::before {
@@ -113,6 +115,7 @@ body {
 }
 #about-me {
   flex: 2;
+  min-height: 100px;
 }
 .about-me-title {
   margin-top: 1em;
